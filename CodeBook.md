@@ -89,6 +89,17 @@ activity_labels.txt  - the activities the participants performed
   X_test.txt 2947 observations of 561 variables
   
   
-  
-  
+  ######  for this project I am taking directions 
+######  literally and looking for variables with mean() or std()
+######  According to the document "features_info.txt" these are the 
+######  "variables". 
+######  68 columns
+######  Based on the document alone, I understand that there are 
+######  three different signals for each measurement, therefor the XYZ are
+######  not variables. Taken from the document as
+######  '-XYZ' is used to denote 3-axial signals in the X, Y and Z directions
+######  tBodyAcc-X, tBodyAcc-Y, tBodyAcc-Z are all separate signals
+######  In a productive environment this should be 
+######  investigated more
+
   
