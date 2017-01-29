@@ -298,7 +298,7 @@ Contained in the zip file and in directory structure
     
 8. The final data set is shaped by gathering all the columns other than the subjectnumber and activityname.  
     The columns are renamed to "subjectnumber", "activityname", "featurename", "featurevalue"
-    The final data table is written a csv file for future purposes, "final_data.csv"  
+    The final data table is written in both a text and a csv file for future purposes, "final_data.txt"  
     *I chose csv as an industry standard and it is an format that the customer can easily
      reformat themselves without code changes for me, a txt file of 200 random observations has been
      added for documentation only, the final data set is too big to include in the repo*
