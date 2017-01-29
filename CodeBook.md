@@ -64,12 +64,12 @@ Contained in the zip file and in directory structure
    It contains a activity number variable with unique numbers and corresponding activity name
     
    Activity Number / Activity Name 
-    * 1 WALKING
-    * 2 WALKING_UPSTAIRS
-    * 3 WALKING_DOWNSTAIRS
-    * 4 SITTING
-    * 5 STANDING
-    * 6 LAYING
+      -1 WALKING
+      -2 WALKING_UPSTAIRS
+      -3 WALKING_DOWNSTAIRS
+      -4 SITTING
+      -5 STANDING
+      -6 LAYING
    
     Added applicable variable / column names as "activitynumber", "activityname"
     -6 observations of 2 variables
@@ -106,7 +106,7 @@ Contained in the zip file and in directory structure
    - subject_train.txt 7352 observations of 1 variable
    - subject_test.txt 2947 observations of 1 variable
   
-##### y_test.txt / y_train.txt*
+##### y_test.txt / y_train.txt
   Each file is read file into train_labels or test_labels data_table using "fread" 
   It contains activity numbers only, 1,2,3,4,5,or 6 and according the assumption outlined in the
   readme.md, they are in the same order as the observations of the subject activities performed
@@ -134,17 +134,22 @@ Contained in the zip file and in directory structure
   
   ### 2. Descripton of Output Files
     Two data sets are required the first:  
+        
         Merges the training and the test sets to create one data set,
         
         Extracts only the measurements on the mean and standard deviation for each measurement.
         
         Uses descriptive activity names to name the activities in the data set
       
-      Appropriately labels the data set with descriptive variable names.
+        Appropriately labels the data set with descriptive variable names.
     
     The second:
+      
       From the prior data set in create an independent tidy data set with the average 
       of each variable for each activity and each subject. 
+    
+    Another logfile.txt was created and appended throughout the code to record data integrity tests 
+    after binds and merges.
     
     *File layout determination
          -For this project I am taking directions from features_info.txt literally and looking for featurenames 
@@ -159,7 +164,8 @@ Contained in the zip file and in directory structure
         - there are 66 featurenames that are required to be kept
         - this will be a "long" data set*
 
-    * Data Dictionary for data set*
+##### Data Dictionary for data sets
+      final_set
       1.  subjectnumber
           1 thru 6
       
@@ -241,7 +247,13 @@ Contained in the zip file and in directory structure
       
       4. Feature Value
         - the test value observed for the feature
+        
+        summarized_set
+        First 3 variables as above,
+        4. featureaverage
+        - the average value observed for the feature over activityname and subjectnumber
 
+ 
 
 
 ### 3. Coding Walkthru
