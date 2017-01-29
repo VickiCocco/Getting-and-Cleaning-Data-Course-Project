@@ -1,3 +1,5 @@
+# Code Book for Course Final Project
+
 Intial Files Received:
 
 A zip file "UCI HAR DATASET"
