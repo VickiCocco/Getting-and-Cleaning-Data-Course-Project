@@ -35,19 +35,23 @@ Contained in the zip file and in directory structure
         total_acc_z_test.txt*
   
   5.train directory
+     
      subject_test.txt
+     
      X_test.txt
+     
      y_test.txt
-     Inertial Signals directory
-        -body_acc_x_test.txt
-        -body_acc_y_test.txt
-        -body_acc_z_test.txt
-        -body_gyro_x_test.txt
-        -body_gyro_y_test.txt
-        -body_gyro_z_test.txt
-        -total_acc_x_test.txt
-        -total_acc_y_test.txt
-        -total_acc_z_test.txt
+     
+     Inertial Signals directory - 
+         *body_acc_x_test.txt
+          body_acc_y_test.txt
+          body_acc_z_test.txt
+          body_gyro_x_test.txt
+          body_gyro_y_test.txt
+          body_gyro_z_test.txt
+          total_acc_x_test.txt
+          total_acc_y_test.txt
+         total_acc_z_test.txt*
       
 #### A brief summary of the data:
 "Participants" performed "Activities" while biometric "Features" were measured and recorded as observations.
