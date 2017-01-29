@@ -19,3 +19,6 @@ features_info.txt
 run_analysis.R
 summarized_data.csv
 summarized_data.txt
+
+info_set <- sample_n(gathered_set, 200, replace = FALSE)
+write.table(info_set, "info_only_data.txt", sep="\t", append = TRUE, row.names = FALSE)
