@@ -263,8 +263,9 @@ Contained in the zip file and in directory structure
 
 
 ### 3. Coding Walkthru
-  - please see Merge Schema file in repo - steps 1 - 6 are in the diagram.  
-    These steps are also documented in the code
+*please see Merge Schema file in repo - steps 1 - 6 are in the diagram. *
+
+
 1. The appropriate column / variable names as described in the import descriptions of the files, 
     were applied to teach of the test and train datasets.  
     The number of observations from the feature.txt file match the number of variables 
@@ -280,6 +281,7 @@ Contained in the zip file and in directory structure
       
  4. Each of the merged test and train datatables have the same number of columns.  They were merged using rbind.
     *10299 observations of 563 variables*
+    
  5. & 
  6. The data table for the activity_labels.txt file links the number of the activity to the activity name.
      The merged data table has only activity numbers in it, it needs the activity names to be tidier.  
@@ -287,6 +289,7 @@ Contained in the zip file and in directory structure
      The activity number is now redundant, the activity number column is removed.
      The remaining data table is sorted on subject number and activity name.
      *The is no schema from here only but the code is documented*
+     
  7. The next step is to remove the unwanted data.  Based on the data determination presented, 
     the variables to keep were identified using grepl to create a logical vector based on the feature names. 
     This logical vector is used to keep the "TRUE" columns.
