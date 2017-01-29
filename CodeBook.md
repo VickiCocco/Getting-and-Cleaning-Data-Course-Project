@@ -265,13 +265,13 @@ Contained in the zip file and in directory structure
 ### 3. Coding Walkthru
 *please see Merge Schema file in repo - steps 1 - 6 are in the diagram. *
 
-
-1. The appropriate column / variable names as described in the import descriptions of the files, 
+1.  The appropriate column / variable names as described in the import descriptions of the files, 
     were applied to teach of the test and train datasets.  
     The number of observations from the feature.txt file match the number of variables 
     from the X_test and X_train files.
     
- 2. & 
+ 2. &
+ 
  3. Each of the data tables made from the X_test.txt, y_test.txt and subject_test.txt 
     have the same number of observations. These were merged into one data table using cbind.  
     Each of the data tables made from the X_train.txt, y_train.txt and subject_train.txt 
@@ -282,7 +282,8 @@ Contained in the zip file and in directory structure
  4. Each of the merged test and train datatables have the same number of columns.  They were merged using rbind.
     *10299 observations of 563 variables*
     
- 5. & 
+ 5. &
+ 
  6. The data table for the activity_labels.txt file links the number of the activity to the activity name.
      The merged data table has only activity numbers in it, it needs the activity names to be tidier.  
      The activity_labels table is joined as a full join with the merge table on the activity number variable.
