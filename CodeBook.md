@@ -20,7 +20,7 @@ Contained in the zip file and in directory structure
      X_test.txt
      y_test.txt
      Inertial Signals directory
-        body_acc_x_test.txt
+        ...body_acc_x_test.txt
         body_acc_y_test.txt
         body_acc_z_test.txt
         body_gyro_x_test.txt
