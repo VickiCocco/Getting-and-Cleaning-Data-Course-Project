@@ -115,19 +115,24 @@ Contained in the zip file and in directory structure
       the requirements change
   
   ### 2. Descripton of Output Files
-  
-  
-  ######  for this project I am taking directions 
-######  literally and looking for variables with mean() or std()
-######  According to the document "features_info.txt" these are the 
-######  "variables". 
-######  68 columns
-######  Based on the document alone, I understand that there are 
-######  three different signals for each measurement, therefor the XYZ are
-######  not variables. Taken from the document as
-######  '-XYZ' is used to denote 3-axial signals in the X, Y and Z directions
-######  tBodyAcc-X, tBodyAcc-Y, tBodyAcc-Z are all separate signals
-######  In a productive environment this should be 
-######  investigated more
+    - two data sets are required
+    - the first:  
+      - merges the training and the test sets to create one data set,
+      - extracts only the measurements on the mean and standard deviation for each measurement.
+      - uses descriptive activity names to name the activities in the data set
+      - appropriately labels the data set with descriptive variable names.
+
+    - the second:
+      - from the prior data set in create an independent tidy data set with the average of each variable for each activity and each               subject. 
+    
+    *File layout determination*
+         -For this project I am taking directions from features_info.txt literally and looking for featurenames 
+         with mean() or std() according to the document these are the 2 "variables" required
+        - there are 66 featurenames that are required to be kept
+        Based on the document , I understand that there are three different signals for each measurement, therefore the separate 
+        XYZ are not variables. 
+        Taken from the document as : '-XYZ' is used to denote 3-axial signals in the X, Y and Z directions
+        - tBodyAcc-X, tBodyAcc-Y, tBodyAcc-Z are all separate signals
+        - In a productive environment this should be investigated more
 
   
