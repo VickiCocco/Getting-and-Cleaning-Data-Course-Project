@@ -33,5 +33,6 @@
 ### info_set.txt - the final data set is large, this file has 200 random observations
   for documentation purposes, obtained by using the following line commands
   
-*info_set <- sample_n(gathered_set, 200, replace = FALSE)
-write.table(info_set, "info_only_data.txt", sep="\t", append = TRUE, row.names = FALSE)*
+* > info_set <- sample_n(gathered_set, 200, replace = FALSE)*
+
+* > write.table(info_set, "info_only_data.txt", sep="\t", append = TRUE, row.names = FALSE)*
