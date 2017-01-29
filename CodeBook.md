@@ -64,27 +64,32 @@ Contained in the zip file and in directory structure
    It contains a activity number variable with unique numbers and corresponding activity name
     
    Activity Number / Activity Name 
-    - 1 WALKING
-    - 2 WALKING_UPSTAIRS
-    - 3 WALKING_DOWNSTAIRS
-    - 4 SITTING
-    - 5 STANDING
-    - 6 LAYING
+    * 1 WALKING
+    * 2 WALKING_UPSTAIRS
+    * 3 WALKING_DOWNSTAIRS
+    * 4 SITTING
+    * 5 STANDING
+    * 6 LAYING
    
-  - Added applicable variable / column names as "activitynumber", "activityname"
-  -6 observations of 2 variables
+    Added applicable variable / column names as "activitynumber", "activityname"
+    -6 observations of 2 variables
   
 ##### features.txt - the features of each test with some parameters
    The file is read file into features data_table using "fread"  
+   
    A complete list of features if included in feature_info.txt included in repo
+   
    It contains a feature number variable with unique numbers adn corresponding feature name
     eg:  "1 tBodyAcc-mean()-X" , "88 tBodyAccJerk-mad()-Y"
+    
     Added applicable variable / column names as "featurenumber", "featurename"
     - 561 observations of 2 variables
   
 ##### feature_info.txt
   The file is read file into features_info data_table using "fread" 
+  
   After inspection this file is an information only text file and has been included in this repository
+  
   It contains logical information about the format of more of the datasets
   
   *The train and test directories contain similar number of files and name structure.  After inspection 
@@ -92,9 +97,11 @@ Contained in the zip file and in directory structure
   
 ##### subject_test.txt / subject_train.txt
   Each file is read file into subject_train or subject_test data_table using "fread" 
+  
   It contains subject numbers only, and according the assumption outlined in the readme.md, 
   they are in the same order as the observations in each of the train_y and test_y file
   described next.
+  
   Added applicable variable / column name as "subjectnumber"
    - subject_train.txt 7352 observations of 1 variable
    - subject_test.txt 2947 observations of 1 variable
@@ -109,9 +116,11 @@ Contained in the zip file and in directory structure
   
 ##### X_test.txt / X_train.txt
   Each file is read file into train_set or test_set data_table using "fread" 
+  
   It contains the feature observed value from each of the participants performing each actvity,
   and according the assumption outlined in the readme.md, thery are in the 
   same order as the observations of the subject activities performed, and the features listed
+  
   Added applicable variable / column names as from the features.txt file
   - X_train.txt 7352 observations of 561 variables
   - X_test.txt 2947 observations of 561 variables
@@ -124,16 +133,20 @@ Contained in the zip file and in directory structure
     the requirements change*
   
   ### 2. Descripton of Output Files
-    - two data sets are required
-    - the first:  
-      - merges the training and the test sets to create one data set,
-      - extracts only the measurements on the mean and standard deviation for each measurement.
-      - uses descriptive activity names to name the activities in the data set
-      - appropriately labels the data set with descriptive variable names.
-    - the second:
-      - from the prior data set in create an independent tidy data set with the average of each variable for each activity and each               subject. 
+    Two data sets are required the first:  
+        Merges the training and the test sets to create one data set,
+        
+        Extracts only the measurements on the mean and standard deviation for each measurement.
+        
+        Uses descriptive activity names to name the activities in the data set
+      
+      Appropriately labels the data set with descriptive variable names.
     
-    *File layout determination*
+    The second:
+      From the prior data set in create an independent tidy data set with the average 
+      of each variable for each activity and each subject. 
+    
+    *File layout determination
          -For this project I am taking directions from features_info.txt literally and looking for featurenames 
           with mean() or std() according to the document, i interpret the 2 "variables" required are feature name and value
         - there are 66 featurenames that are required to be kept
@@ -144,7 +157,7 @@ Contained in the zip file and in directory structure
         - tBodyAcc-X, tBodyAcc-Y, tBodyAcc-Z are all separate signals
         - In a productive environment this should be investigated more
         - there are 66 featurenames that are required to be kept
-        - this will be a "long" data set
+        - this will be a "long" data set*
 
     * Data Dictionary for data set*
       1.  subjectnumber
