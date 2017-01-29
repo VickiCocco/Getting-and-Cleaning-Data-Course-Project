@@ -64,11 +64,17 @@ Contained in the zip file and in directory structure
    It contains a activity number variable with unique numbers and corresponding activity name
     
    Activity Number / Activity Name 
+   
       -1 WALKING
+   
       -2 WALKING_UPSTAIRS
+      
       -3 WALKING_DOWNSTAIRS
+      
       -4 SITTING
+      
       -5 STANDING
+      
       -6 LAYING
    
     Added applicable variable / column names as "activitynumber", "activityname"
@@ -267,7 +273,7 @@ Contained in the zip file and in directory structure
     5. & 
     6. The data table for the activity_labels.txt file links the number of the activity to the activity name. The merged data table has        only activity numbers in it, it needs the activity names to be tidier.  The activity_labels table is joined as a full join with          the merge table on the activity number variable.  The activity number is now redundant, the activity number column is removed.          The remaining data table is sorted on subject number and activity name.
    
-   *The is no schema from here only but the code is fully documented*
+   *The is no schema from here only but the code is documented*
     7. The next step is to remove the unwanted data.  Based on the data determination presented, the variables to keep were
        identified using grepl to create a logical vector based on the feature names. 
        This logical vector is used to keep the "TRUE" columns.
