@@ -31,7 +31,7 @@
 ### summarized_data.txt - contains same information - with a header for easier reading if needed
 
 ### info_set.txt - the final data set is large, this file has 200 random observations
-  for documentation purposes, obtained by using the following line commands
+### for documentation purposes, obtained by using the following line commands
   
 * > info_set <- sample_n(gathered_set, 200, replace = FALSE)*
 
