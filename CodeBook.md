@@ -215,7 +215,35 @@ tGravityAccMag-std()
   4. Each of the merged test and train datatables have the same number of columns.  They were merged using rbind.
        10299 observations of 563 variables.
        
-  5. & 6. The data table for the activity_labels.txt file links the number of the activity to the activity name. The merged data table has only activity numbers in it, it needs the activity names to be tidier.  The activity_labels table is joined as a full join with the merge table on the activity number variable.  The activity number and activity number are now redundant, the activity number column is removed.  The remaining data table is sorted on subject number and activiy name.
+   5. & 6. The data table for the activity_labels.txt file links the number of the activity to the activity name. The merged data table has only activity numbers in it, it needs the activity names to be tidier.  The activity_labels table is joined as a full join with the merge table on the activity number variable.  The activity number is now redundant, the activity number column is removed.  The remaining data table is sorted on subject number and activity name.
+   
+   *The is no schema from here only but the code is fully documented*
+   7. The next step is to remove the unwanted data.  Based on the data determination presented, the variables to keep were
+      identified using grepl to create a logical vector based on the feature names. 
+      This logical vector is used to keep the "TRUE" columns.
+      - 10299 observations of 68 variables
+   
+   8. The final data set is shaped by gathering all the columns other than the subjectnumber and activityname.  
+   - The columns are renamed to "subjectnumber", "activityname", "featurename", "featurevalue"
+   - the final data table is written a csv file for future purposes, "final_data.csv"  
+      *I chose csv as an industry standard and it is an format that the customer can easily
+      reformat themselves without code changes for me, a txt file of 200 random observations has been
+      added for documentation only, the final data set is too big to include in the repo*
+      - 679734 observations of 4 variables
+     
+      
+   9. The summarised data set created by grouping and summarising on 
+      - "subjectnumber", "activityname", "featurename" and averaging the "featurevalue", which is named "featureaverage"
+      - added to the repo as "summarized_data.csv", and another txt file is added for documentation
+      - 11880 observations of 4 variables
+      
+   10. Throughout the code, a "logfile.txt" was created and appended with messages about basic data integrity tests performed 
+       - to prove out the binding and merging techniques
+      
+      
+      
+   
+   
   
   
   
