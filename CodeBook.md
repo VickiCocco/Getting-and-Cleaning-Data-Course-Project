@@ -16,11 +16,15 @@ Contained in the zip file and in directory structure
   2. features.txt
   3. feature_info.txt
   4. test directory
+     
      subject_test.txt
+     
      X_test.txt
+     
      y_test.txt
-     Inertial Signals directory
-        ...body_acc_x_test.txt
+     
+     Inertial Signals directory -      
+        *body_acc_x_test.txt
         body_acc_y_test.txt
         body_acc_z_test.txt
         body_gyro_x_test.txt
@@ -28,7 +32,8 @@ Contained in the zip file and in directory structure
         body_gyro_z_test.txt
         total_acc_x_test.txt
         total_acc_y_test.txt
-        total_acc_z_test.txt
+        total_acc_z_test.txt*
+  
   5.train directory
      subject_test.txt
      X_test.txt
