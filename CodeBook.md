@@ -7,58 +7,59 @@
 ### 1. Description of Files Received:
 
 #### A zip file "UCI HAR DATASET"
-- in the Readme.md for this project there is an assumption that this file is unzipped to the working drive of the R Script
-- for the purpose of this project this will stand until further development is requested
-- there is a Readme.txt accompanying the received files to explain the data, it is included in this repo
+  In the Readme.md for this project there is an assumption that this file is unzipped to the working drive of the R Script
+  For the purpose of this project this will stand until further development is requested
+  There is a Readme.txt accompanying the received files to explain the data, it is included in this repo
 
 Contained in the zip file and in directory structure
-  activity_labels.txt
-  features.txt
-  feature_info.txt
-  test directory
-    subject_test.txt
-    X_test.txt
-    y_test.txt
-    Inertial Signals directory
-      -body_acc_x_test.txt
-      -body_acc_y_test.txt
-      -body_acc_z_test.txt
-      -body_gyro_x_test.txt
-      -body_gyro_y_test.txt
-      -body_gyro_z_test.txt
-      -total_acc_x_test.txt
-      -total_acc_y_test.txt
-      -total_acc_z_test.txt
-  train directory
-    subject_test.txt
-    X_test.txt
-    y_test.txt
-    Inertial Signals directory
-      -body_acc_x_test.txt
-      -body_acc_y_test.txt
-      -body_acc_z_test.txt
-      -body_gyro_x_test.txt
-      -body_gyro_y_test.txt
-      -body_gyro_z_test.txt
-      -total_acc_x_test.txt
-      -total_acc_y_test.txt
-      -total_acc_z_test.txt
+  1. activity_labels.txt
+  2. features.txt
+  3. feature_info.txt
+  4. test directory
+      subject_test.txt
+      X_test.txt
+      y_test.txt
+      Inertial Signals directory
+        -body_acc_x_test.txt
+        -body_acc_y_test.txt
+        -body_acc_z_test.txt
+        -body_gyro_x_test.txt
+        -body_gyro_y_test.txt
+        -body_gyro_z_test.txt
+        -total_acc_x_test.txt
+        -total_acc_y_test.txt
+        -total_acc_z_test.txt
+  5.train directory
+     subject_test.txt
+     X_test.txt
+     y_test.txt
+     Inertial Signals directory
+        -body_acc_x_test.txt
+        -body_acc_y_test.txt
+        -body_acc_z_test.txt
+        -body_gyro_x_test.txt
+        -body_gyro_y_test.txt
+        -body_gyro_z_test.txt
+        -total_acc_x_test.txt
+        -total_acc_y_test.txt
+        -total_acc_z_test.txt
       
 #### A brief summary of the data:
 "Participants" performed "Activities" while biometric "Features" were measured and recorded as observations.
 
 #### Initial imports and anaylsis for each file
-*activity_labels.txt*  - the activities the participants performed
-  - The file is read into activity_lablels data_table using "fread" 
-  - It contains a activity number variable with unique numbers and corresponding activity name
+
+##### activity_labels.txt  - the activities the participants performed
+      The file is read into activity_lablels data_table using "fread" 
+      It contains a activity number variable with unique numbers and corresponding activity name
     
-    Activity Number / Activity Name 
-     - 1 WALKING
-     - 2 WALKING_UPSTAIRS
-     - 3 WALKING_DOWNSTAIRS
-     - 4 SITTING
-     - 5 STANDING
-     - 6 LAYING
+      Activity Number / Activity Name 
+      - 1 WALKING
+      - 2 WALKING_UPSTAIRS
+      - 3 WALKING_DOWNSTAIRS
+      - 4 SITTING
+      - 5 STANDING
+      - 6 LAYING
    
   - Added applicable variable / column names as "activitynumber", "activityname"
   -6 observations of 2 variables
