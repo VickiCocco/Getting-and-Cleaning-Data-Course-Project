@@ -1,9 +1,8 @@
 # Code Book for Course Final Project
 ## Sections
 1. Description of Files Received
-2. Descripton of Output Files
-3. Merge Steps Explained
-4. Coding Walkthru
+2. Descripton of Output Files and Data Dictionary
+3. Coding Walkthru
 
 ### 1. Description of Files Received:
 
@@ -206,3 +205,18 @@ tGravityAcc-std()-Z
 tGravityAccMag-mean()
 tGravityAccMag-std()
 
+### 3. Coding Walkthru
+  - please see Merge Schema file in repo - steps 1 - 6 are in the diagram.  These steps are also documented in the code
+  1. The appropriate column / variable names as described in the import descriptions of the files, were applied to teach of the test and train datasets.  The number of observations from the feature.txt file match the number of variables from the X_test and X_train files. 
+  
+  2. & 3. Each of the data tables made from the X_test.txt, y_test.txt and subject_test.txt have the same number of observations. These were merged into one data table using cbind.  2947 observations of 563 variables
+  Each of the data tables made from the X_train.txt, y_train.txt and subject_train.txt have the same number of observations. These were merged into one data table using cbind. 7352 observation of 563 variables
+  
+  4. Each of the merged test and train datatables have the same number of columns.  They were merged using rbind.
+       10299 observations of 563 variables.
+       
+  5. & 6. The data table for the activity_labels.txt file links the number of the activity to the activity name. The merged data table has only activity numbers in it, it needs the activity names to be tidier.  The activity_labels table is joined as a full join with the merge table on the activity number variable.  The activity number and activity number are now redundant, the activity number column is removed.  The remaining data table is sorted on subject number and activiy name.
+  
+  
+  
+  
