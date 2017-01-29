@@ -4,8 +4,6 @@
 2. Descripton of Output Files
 3. Merge Steps Explained
 4. Coding Walkthru
-5. Data Dictionary
-
 
 ### 1. Description of Files Received:
 
@@ -121,18 +119,90 @@ Contained in the zip file and in directory structure
       - extracts only the measurements on the mean and standard deviation for each measurement.
       - uses descriptive activity names to name the activities in the data set
       - appropriately labels the data set with descriptive variable names.
-
     - the second:
       - from the prior data set in create an independent tidy data set with the average of each variable for each activity and each               subject. 
     
     *File layout determination*
          -For this project I am taking directions from features_info.txt literally and looking for featurenames 
-         with mean() or std() according to the document these are the 2 "variables" required
+          with mean() or std() according to the document, i interpret the 2 "variables" required are feature name and value
         - there are 66 featurenames that are required to be kept
-        Based on the document , I understand that there are three different signals for each measurement, therefore the separate 
-        XYZ are not variables. 
-        Taken from the document as : '-XYZ' is used to denote 3-axial signals in the X, Y and Z directions
+        - Based on the document , I understand that there are three different signals for each measurement, 
+        - therefore the separate XYZ are not variables. 
+        - Taken from the document as :
+        - '-XYZ' is used to denote 3-axial signals in the X, Y and Z directions
         - tBodyAcc-X, tBodyAcc-Y, tBodyAcc-Z are all separate signals
         - In a productive environment this should be investigated more
+        - there are 66 featurenames that are required to be kept
+        - this will be a "long" data set
 
-  
+    * Data Dictionary for data set*
+      1.  subjectnumber
+          1 thru 6
+      2. feature name 
+        fBodyAcc-mean()-X
+fBodyAcc-mean()-Y
+fBodyAcc-mean()-Z
+fBodyAcc-std()-X
+fBodyAcc-std()-Y
+fBodyAcc-std()-Z
+fBodyAccJerk-mean()-X
+fBodyAccJerk-mean()-Y
+fBodyAccJerk-mean()-Z
+fBodyAccJerk-std()-X
+fBodyAccJerk-std()-Y
+fBodyAccJerk-std()-Z
+fBodyAccMag-mean()
+fBodyAccMag-std()
+fBodyBodyAccJerkMag-mean()
+fBodyBodyAccJerkMag-std()
+fBodyBodyGyroJerkMag-mean()
+fBodyBodyGyroJerkMag-std()
+fBodyBodyGyroMag-mean()
+fBodyBodyGyroMag-std()
+fBodyGyro-mean()-X
+fBodyGyro-mean()-Y
+fBodyGyro-mean()-Z
+fBodyGyro-std()-X
+fBodyGyro-std()-Y
+fBodyGyro-std()-Z
+tBodyAcc-mean()-X
+tBodyAcc-mean()-Y
+tBodyAcc-mean()-Z
+tBodyAcc-std()-X
+tBodyAcc-std()-Y
+tBodyAcc-std()-Z
+tBodyAccJerk-mean()-X
+tBodyAccJerk-mean()-Y
+tBodyAccJerk-mean()-Z
+tBodyAccJerk-std()-X
+tBodyAccJerk-std()-Y
+tBodyAccJerk-std()-Z
+tBodyAccJerkMag-mean()
+tBodyAccJerkMag-std()
+tBodyAccMag-mean()
+tBodyAccMag-std()
+tBodyGyro-mean()-X
+tBodyGyro-mean()-Y
+tBodyGyro-mean()-Z
+tBodyGyro-std()-X
+tBodyGyro-std()-Y
+tBodyGyro-std()-Z
+tBodyGyroJerk-mean()-X
+tBodyGyroJerk-mean()-Y
+tBodyGyroJerk-mean()-Z
+tBodyGyroJerk-std()-X
+tBodyGyroJerk-std()-Y
+tBodyGyroJerk-std()-Z
+tBodyGyroJerkMag-mean()
+tBodyGyroJerkMag-std()
+tBodyGyroMag-mean()
+tBodyGyroMag-std()
+tGravityAcc-mean()-X
+tGravityAcc-mean()-Y
+tGravityAcc-mean()-Z
+tGravityAcc-std()-X
+tGravityAcc-std()-Y
+tGravityAcc-std()-Z
+tGravityAccMag-mean()
+tGravityAccMag-std()
+
