@@ -1,9 +1,14 @@
 # Getting-and-Cleaning-Data-Course-Project
 
+## RScript
+The script file is run_analysis.R.  It is a stand alone script that I developed in RStudio.  The Codebook.md 
+has further details. Only the given data files are required as input, and the 3 output files are described in
+the Codebook.md
 
 ## ASSUMPTIONS:
 1. The source data file zip was unzipped in the working directory and left in the same directory structure
 2. The obseravations and variables are in the same order across all vectors of data of the same dimensions
+   *these assumptions should be clarified in a productive environment but stands for the purpose of this project*
 
 ## Contained in this REPO
 
