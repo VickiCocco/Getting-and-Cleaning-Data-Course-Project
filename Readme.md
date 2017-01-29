@@ -8,3 +8,14 @@
 ## Contained in this REPO
 
 
+gitignore
+CodeBook.md
+Getting-and-Cleaning-Data-Course-Final-Project.Rpro
+Merge File Schema.jpg
+README-RecievedFromCustomer.txt
+activity_labels.txt
+features.txt
+features_info.txt
+run_analysis.R
+summarized_data.csv
+summarized_data.txt
